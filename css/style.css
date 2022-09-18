@@ -1,0 +1,13 @@
+.bg-gradient{
+    background: linear-gradient(108.44deg, #EDB276 0.66%, #B858DD 56.74%, #5A78EB 96.79%, #5A78EB 96.79%);
+}
+
+
+.hero-img{
+    width: 100%;
+    transform: scaleX(-1);
+}
+
+.hero-img img{
+    width: 400px;
+}
