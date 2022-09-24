@@ -1,13 +1,104 @@
-.bg-gradient{
-    background: linear-gradient(108.44deg, #EDB276 0.66%, #B858DD 56.74%, #5A78EB 96.79%, #5A78EB 96.79%);
+.logo img{
+    width: 3rem;
 }
 
+.logo{
+    max-width: 100%;
+}
 
-.hero-img{
+/* .navbar{
+    color: transparent;
+    justify-content: space-between;
+} */
+
+/* .nav{
+    position: absolute;
+} */
+
+.home-page{
+    background: linear-gradient(108.44deg, #EDB276 0.66%, #B858DD 56.74%, #5A78EB 96.79%, #5A78EB 96.79%);
+    height: 95vh;
+}
+
+.hero{
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.home-img{
     width: 100%;
     transform: scaleX(-1);
 }
 
-.hero-img img{
-    width: 400px;
+.home-img img{
+    width: 350px;
+}
+
+.text-home{
+    font-size: 2rem; 
+}
+
+.robot-page{
+    background-color: #343343;
+    padding: 3rem;
+    height: 100vh;
+}
+
+.robot-page h1{
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+.robot-page p{
+    padding: 3rem;
+}
+
+.gallery-page{
+    background-image: url(../images/Group\ 15.png);
+    height: 100vh;
+    width: 100%;
+    padding: 3rem;
+}
+
+.gallery-page h1{
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+.team-page{
+    background-image: url(../images/Group\ 16.png);
+    height: 100vh;
+    width: 100vh;
+    margin-top: 0;
+    padding: 3rem;
+}
+
+.team-page h1{
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+.contact-page{
+    background: linear-gradient(107.2deg, #EDB276 2.11%, #B858DD 49.53%, #5A78EB 100%, #5A78EB 100%);
+    height: 100vh;
+    width: 100vh;
+    padding: 3rem;
+}
+
+.contact-page h1{
+    font-weight: 200;
+}
+
+.page{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
 }
