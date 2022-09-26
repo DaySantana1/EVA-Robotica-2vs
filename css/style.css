@@ -95,10 +95,29 @@
     font-weight: 200;
 }
 
+.contact-img{
+    width: 100%;
+}
+
+.contact-img img{
+    width: 40%;
+    animation: float 3s  infinite;
+}
+
 .page{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
+}
+
+@keyframes float{
+    from{
+        margin-top: -15px
+    }
+
+    to{
+        margin-top: 15px;
+    }
 }
