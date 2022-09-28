@@ -1,15 +1,19 @@
-.logo img{
+.navbar-brand img{
     width: 3rem;
 }
 
-.logo{
+.navbar{
+    position: absolute;
+}
+
+.img-navbar{
     max-width: 100%;
 }
 
-
-.home-page{
-    background: linear-gradient(108.44deg, #EDB276 0.66%, #B858DD 56.74%, #5A78EB 96.79%, #5A78EB 96.79%);
-    height: 95vh;
+.bg-grey{
+    background-color: #282734;
+    position: absolute;
+    z-index: 99;
 }
 
 .hero{
@@ -17,28 +21,64 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background: cover;
     background-attachment: fixed;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
+}
+
+.home-page{
+    background: linear-gradient(108.44deg, #ce853d 0.66%, #8527aa 56.74%, #3451c5 90.79%, #2743b1 96.79%);
+    height: 95vh;
+    position: relative;
 }
 
 .home-img{
     width: 100%;
+    animation: imghero;
     transform: scaleX(-1);
 }
 
 .home-img img{
-    width: 350px;
+    width: 65%;
+    animation: homeimg cubic-bezier(.68,.16,.43,.91) 1s;
 }
 
 .text-home{
     font-size: 2rem; 
 }
 
+.home-text{
+    animation: home cubic-bezier(.68,.16,.43,.91) 1s;
+}
+
+@keyframes home{
+    from{
+        margin-top:-100%;
+    }
+
+    to{
+        margin-top: 0;
+    }
+}
+
+@keyframes homeimg{
+    from{
+        rotate: 60deg;
+    }
+
+    to{
+        rotate: 0deg;
+    }
+}
+
 .robot-page{
-    background-color: #343343;
+    background: #282734;
     padding: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100%;
     height: 100vh;
 }
 
@@ -52,7 +92,7 @@
 }
 
 .gallery-page{
-    background-image: url(../images/Group\ 15.png);
+    background: #282734 ;
     height: 100vh;
     width: 100%;
     padding: 3rem;
@@ -63,8 +103,22 @@
     font-size: 3rem;
 }
 
+.carousel-item{
+    width: 80%;
+}
+
+.carousel-item img{
+    width: 70%;
+    margin: 0 15%;
+    border-radius: 10px 10px;
+}
+
+.carousel{
+    width: 10%;
+}
+
 .team-page{
-    background-image: url(../images/Group\ 16.png);
+    background: #282734;
     height: 100vh;
     width: 100vh;
     margin-top: 0;
@@ -93,16 +147,10 @@
 
 .contact-img img{
     width: 40%;
-    animation: float 3s  infinite;
+    animation: float 3s cubic-bezier(.35,.28,.46,.92) infinite;
 }
 
-.page{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-}
+
 
 @keyframes float{
     from{
