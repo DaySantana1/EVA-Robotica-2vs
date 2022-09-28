@@ -14,48 +14,45 @@
 
 <body>
   
-  <!-- <nav class="navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-expand-lg bg-grey navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand " href="#"><img src="./images/logo.png" class="img-navbar"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link active" href="#">Link</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item active" href="#">Another action</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item active" href="#">Something else here</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+            <a href="" class="nav-link">Disabled</a>
           </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        </ul>            
       </div>
     </div>
-  </nav> -->
-
+  </nav>
+  
+    
   <div class="container-fluid p-5 home-page hero">
     <div class="row p-5 ">
-      <div class="col-12 col-sm-12 col-md-6  d-flex flex-column justify-content-center align-items-center">
-        <h1 class="display-2 my-4 text-center text-light">Conheça EVA</h1>
-        <h2 class="lead text-home text-center text-light my-4">Trazendo a robótica de forma inovadora e disruptiva aos
+      <div class="col-12 col-sm-12 col-md-6  d-flex flex-column justify-content-center align-items-center home-text">
+        <h1 class="display-2 my-4 text-center text-light">Conheça <span>EVA</span></h1>
+        <h2 class="lead text-home text-center text-light p-4">Trazendo a robótica de forma inovadora e disruptiva aos
           ambientes de ensino ao redor de
           todo o Brasil e futuramente do mundo.</h2>
       </div>
@@ -66,18 +63,78 @@
     </div>
   </div>
 
-  <div class=" hero robot-page container-fluid text-center text-light">
+  <div class="hero p-4 robot-page container-fluid text-center text-light d-flex flex-column justify-content-center align-items-center">
     <div class="row">
-      <h1>O ROBÔ</h1>
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus libero facere nulla ullam dolorum quam
-        eos velit ex laboriosam ea atque accusantium obcaecati quisquam eius debitis nisi, eligendi, similique, animi
-        labore laborum. Voluptatibus, cupiditate sapiente.</p>
+
+      <div class="col-12 col-lg-8 col-sm-12 col-md-6">
+        <h1>O ROBÔ</h1>
+      <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae error sunt quibusdam earum quis consequuntur vitae eum autem tempore, atque, debitis numquam incidunt, perspiciatis dolore fugit in possimus itaque repellat! Impedit excepturi, voluptatum tempore in temporibus eveniet magni laudantium reiciendis.</p>
+      </div>
+      <div class="home-img col-lg-4 col-sm-12 col-md-6">
+        <img src="./images/pngwing.com.png" alt="Imagem eva do wall-e">
+      </div>
+
     </div>
   </div>
 
-  <div class="hero gallery-page container-fluid text-center text-light">
+  <div class="hero p-4 gallery-page container-fluid text-center text-light">
     <div class="row">
       <h1>GALERIA DE IMAGENS</h1>
+    </div>
+
+    <div id="carouselExampleDark" class="carousel carousel-light slide m-4 justify-content-center align-items-center col-12" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="./images/imagem lateral1.jpeg" class="d-block" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./images/imagem lateral2.jpeg" class="d-block" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <!-- <div class="carousel-item">
+          <img src="./images/integrante1.jpeg" class="d-block" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/integrante2.jpeg" class="d-block" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/montagem arma.jpeg" class="d-block" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div> -->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
   </div>
