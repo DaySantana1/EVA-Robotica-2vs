@@ -1,43 +1,43 @@
 /* variáveis */
 
-:root{
+:root {
     --dark: #282734;
 }
 
 /* keyframes */
-@keyframes home{
-    from{
-        margin-top:-100%;
+@keyframes home {
+    from {
+        margin-top: -100%;
     }
 
-    to{
+    to {
         margin-top: 0;
     }
 }
 
-@keyframes homeimg{
-    from{
+@keyframes homeimg {
+    from {
         rotate: 60deg;
     }
 
-    to{
+    to {
         rotate: 0deg;
     }
 }
 
-@keyframes float{
-    from{
+@keyframes float {
+    from {
         margin-top: -15px
     }
 
-    to{
+    to {
         margin-top: 15px;
     }
 }
 
 /* formatação hero */
-.hero{
-    height: 100vh;
+.hero {
+    height: 85vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,143 +47,155 @@
 }
 
 /* navbar */
-.navbar{
-    position: absolute;
+
+.img-navbar {
+    width: 4.6875rem;
+    transition: .5s;
 }
 
-.dropdown ul{
-    background-color: var(--dark);
+.bg-header {
+    background-color: transparent;
+    z-index: 3;
+    width: 100%;
+    padding: 10px 50px 0 50px;
+}
+.nav-link {
+    color: white !important;
+    font-size: 1.5rem !important;
+    transition: .5s !important;
 }
 
-.navbar-brand img{
-    width: 3rem;
+.nav-link:hover{
+    transform: scale(1.2);
+    color: #282734 !important;
 }
 
-.img-navbar{
-    max-width: 100%;
+.img-navbar:hover {
+    transform: scale(1.3);
 }
-
-.bg-grey{
-    background-color: var(--dark);
-    position: absolute;
-    z-index: 99;
-}
-
 /* home */
 
-.home-page{
-    background: linear-gradient(108.44deg, #ce853d 0.66%, #8527aa 56.74%, #3451c5 90.79%, #2743b1 96.79%);
-    height: 95vh !important;
+.home-page {
+    background: rgb(102, 85, 239);
+    background: linear-gradient(300deg, rgba(102, 85, 239, 1) 10%, rgba(187, 81, 238, 1) 50%, rgba(237, 178, 118, 1) 100%);
+    /* height: 100vh; */
     position: relative;
 }
 
-.home-img{
+.home-img {
     width: 100%;
     animation: imghero;
     transform: scaleX(-1);
 }
 
-.home-img img{
+.home-img img {
     width: 65%;
-    animation: homeimg cubic-bezier(.68,.16,.43,.91) 1s;
+    animation: homeimg cubic-bezier(.68, .16, .43, .91) 1s;
 }
 
-.text-home{
-    font-size: 2rem; 
+.text-home {
+    font-size: 2rem;
 }
 
-.home-text{
-    animation: home cubic-bezier(.68,.16,.43,.91) 1s;
+.home-text {
+    animation: home cubic-bezier(.68, .16, .43, .91) 1s;
 }
 
 /* página do robô */
 
-.robot-page{
+.robot-page {
     background: var(--dark);
 }
 
-.robot-page h1{
+.robot-page h1 {
     font-weight: 200;
     font-size: 3rem;
 }
 
-.robot-page p{
+.robot-page p {
     padding: 3rem;
 }
 
 /* hardware */
-.arma-page{
-    background-color: #282734;
+.arma-page {
+    background-color: var(--dark);
 }
 
-.arma-page h1{
+.arma-page h1 {
     font-weight: 200;
     font-size: 3rem;
 }
 
-.arma-page p{
+.arma-page p {
     padding: 3rem;
 }
 
 /* galeria de imagens */
-.gallery-page{
-    background: #282734 ;
-    height: 100vh;
+.gallery-page {
+    background: var(--dark);
     width: 100%;
     padding: 3rem;
 }
 
-.gallery-page h1{
+.gallery-page h1 {
     font-weight: 200;
     font-size: 3rem;
 }
 
-.carousel-item{
-    width: 80%;
+.carousel-item {
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.carousel-item img{
-    width: 70%;
-    margin: 0 15%;
-    border-radius: 10px 10px;
-}
-
-.carousel{
-    width: 10%;
-}
 
 /* página de equipe */
-.team-page{
-    background: #282734;
+.team-page {
+    background: var(--dark);
     height: 100vh;
     width: 100vh;
     margin-top: 0;
     padding: 3rem;
 }
 
-.team-page h1{
+.team-page h1 {
     font-weight: 200;
     font-size: 3rem;
 }
 
 /* página de contato */
-.contact-page{
+.contact-page {
     background: linear-gradient(107.2deg, #EDB276 2.11%, #B858DD 49.53%, #5A78EB 100%, #5A78EB 100%);
     height: 100vh;
     width: 100vh;
     padding: 3rem;
 }
 
-.contact-page h1{
+.contact-page h1 {
     font-weight: 200;
     font-size: 3rem;
 }
 
-.contact-img{
+.contact-img {
     width: 100%;
 }
 
-.contact-img img{
+.contact-img img {
     width: 40%;
-    animation: float 3s cubic-bezier(.35,.28,.46,.92) infinite;
+    animation: float 3s cubic-bezier(.35, .28, .46, .92) infinite;
+}
+
+@media (max-width:768px) {
+    .bg-grey {
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+    .nav-link {
+        color: black !important;
+        transform: none !important;
+    }
+    .bg-header{
+        padding: 0;
+    }
 }
