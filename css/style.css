@@ -1,21 +1,41 @@
-.navbar-brand img{
-    width: 3rem;
+/* variáveis */
+
+:root{
+    --dark: #282734;
 }
 
-.navbar{
-    position: absolute;
+/* keyframes */
+@keyframes home{
+    from{
+        margin-top:-100%;
+    }
+
+    to{
+        margin-top: 0;
+    }
 }
 
-.img-navbar{
-    max-width: 100%;
+@keyframes homeimg{
+    from{
+        rotate: 60deg;
+    }
+
+    to{
+        rotate: 0deg;
+    }
 }
 
-.bg-grey{
-    background-color: #282734;
-    position: absolute;
-    z-index: 99;
+@keyframes float{
+    from{
+        margin-top: -15px
+    }
+
+    to{
+        margin-top: 15px;
+    }
 }
 
+/* formatação hero */
 .hero{
     height: 100vh;
     background-position: center;
@@ -26,9 +46,34 @@
     min-height: 100%;
 }
 
+/* navbar */
+.navbar{
+    position: absolute;
+}
+
+.dropdown ul{
+    background-color: var(--dark);
+}
+
+.navbar-brand img{
+    width: 3rem;
+}
+
+.img-navbar{
+    max-width: 100%;
+}
+
+.bg-grey{
+    background-color: var(--dark);
+    position: absolute;
+    z-index: 99;
+}
+
+/* home */
+
 .home-page{
     background: linear-gradient(108.44deg, #ce853d 0.66%, #8527aa 56.74%, #3451c5 90.79%, #2743b1 96.79%);
-    height: 95vh;
+    height: 95vh !important;
     position: relative;
 }
 
@@ -51,35 +96,10 @@
     animation: home cubic-bezier(.68,.16,.43,.91) 1s;
 }
 
-@keyframes home{
-    from{
-        margin-top:-100%;
-    }
-
-    to{
-        margin-top: 0;
-    }
-}
-
-@keyframes homeimg{
-    from{
-        rotate: 60deg;
-    }
-
-    to{
-        rotate: 0deg;
-    }
-}
+/* página do robô */
 
 .robot-page{
-    background: #282734;
-    padding: 3rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 100%;
-    height: 100vh;
+    background: var(--dark);
 }
 
 .robot-page h1{
@@ -91,6 +111,21 @@
     padding: 3rem;
 }
 
+/* hardware */
+.arma-page{
+    background-color: #282734;
+}
+
+.arma-page h1{
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+.arma-page p{
+    padding: 3rem;
+}
+
+/* galeria de imagens */
 .gallery-page{
     background: #282734 ;
     height: 100vh;
@@ -117,6 +152,7 @@
     width: 10%;
 }
 
+/* página de equipe */
 .team-page{
     background: #282734;
     height: 100vh;
@@ -130,6 +166,7 @@
     font-size: 3rem;
 }
 
+/* página de contato */
 .contact-page{
     background: linear-gradient(107.2deg, #EDB276 2.11%, #B858DD 49.53%, #5A78EB 100%, #5A78EB 100%);
     height: 100vh;
@@ -139,6 +176,7 @@
 
 .contact-page h1{
     font-weight: 200;
+    font-size: 3rem;
 }
 
 .contact-img{
@@ -148,16 +186,4 @@
 .contact-img img{
     width: 40%;
     animation: float 3s cubic-bezier(.35,.28,.46,.92) infinite;
-}
-
-
-
-@keyframes float{
-    from{
-        margin-top: -15px
-    }
-
-    to{
-        margin-top: 15px;
-    }
 }
