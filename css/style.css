@@ -7,7 +7,7 @@
 /* keyframes */
 @keyframes home {
     from {
-        margin-top: -100%;
+        margin-top: -50%;
     }
 
     to {
@@ -17,23 +17,27 @@
 
 @keyframes homeimg {
     from {
-        rotate: 60deg;
+        transform: translateX(100px);
     }
 
     to {
-        rotate: 0deg;
+        transform: translateX(0px);
     }
 }
 
 @keyframes float {
-    from {
-        margin-top: -15px
+    0% {
+        transform: translateY(0px);
     }
-
-    to {
-        margin-top: 15px;
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
     }
 }
+
+
 
 /* formatação hero */
 .hero {
@@ -67,7 +71,6 @@
 
 .nav-link:hover{
     transform: scale(1.2);
-    color: #282734 !important;
 }
 
 .img-navbar:hover {
@@ -78,28 +81,28 @@
 .home-page {
     background: rgb(102, 85, 239);
     background: linear-gradient(300deg, rgba(102, 85, 239, 1) 10%, rgba(187, 81, 238, 1) 50%, rgba(237, 178, 118, 1) 100%);
-    /* height: 100vh; */
     position: relative;
 }
 
 .home-img {
     width: 100%;
-    animation: imghero;
     transform: scaleX(-1);
 }
 
 .home-img img {
     width: 65%;
-    animation: homeimg cubic-bezier(.68, .16, .43, .91) 1s;
+    filter: drop-shadow(0px 0px 100px #BB51EE);
 }
 
 .text-home {
-    font-size: 2rem;
+    font-size: 2rem !important;
 }
 
 .home-text {
     animation: home cubic-bezier(.68, .16, .43, .91) 1s;
 }
+
+
 
 /* página do robô */
 
@@ -128,6 +131,13 @@
 
 .arma-page p {
     padding: 3rem;
+}
+.bg-transparent{
+    background-color: transparent;
+}
+
+.accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 
 /* galeria de imagens */
@@ -165,8 +175,7 @@
 /* página de contato */
 .contact-page {
     background: linear-gradient(107.2deg, #EDB276 2.11%, #B858DD 49.53%, #5A78EB 100%, #5A78EB 100%);
-    height: 100vh;
-    width: 100vh;
+    width: 100%;
     padding: 3rem;
 }
 
@@ -181,7 +190,8 @@
 
 .contact-img img {
     width: 40%;
-    animation: float 3s cubic-bezier(.35, .28, .46, .92) infinite;
+    animation: float 3s ease-in-out infinite;
+    
 }
 
 @media (max-width:768px) {
