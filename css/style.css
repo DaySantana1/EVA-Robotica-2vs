@@ -4,6 +4,10 @@
     --dark: #282734;
 }
 
+textarea {
+    resize: none !important;
+}
+
 /* keyframes */
 @keyframes home {
     from {
@@ -192,6 +196,12 @@
     width: 40%;
     animation: float 3s ease-in-out infinite;
     
+}
+
+.bg-form {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px 0 var(--dark);
 }
 
 @media (max-width:768px) {
