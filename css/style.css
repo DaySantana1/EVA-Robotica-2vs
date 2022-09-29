@@ -12,17 +12,15 @@ textarea {
     resize: none !important;
 }
 
-h1{
-    margin-bottom: 4rem !important;
-}
-
 h2{
     font-size: 25px !important;
-    color: var(--whitek);
+    color: var(--white);
 }
 
 p{
     font-size: 20px;
+    padding: 2rem 0 !important;
+    margin-bottom: 0 !important;
 }
 
 /* keyframes */
@@ -59,18 +57,6 @@ p{
 }
 
 
-/* formatação hero */
-.hero {
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    min-height: 100%;
-}
-
-
 /* navbar */
 
 .img-navbar {
@@ -79,8 +65,8 @@ p{
 }
 
 .bg-header {
-    background-color: transparent;
-    z-index: 3;
+    background-color: #69696933;
+    z-index: 99;
     width: 100%;
     padding: 10px 50px 0 50px;
 }
@@ -90,10 +76,33 @@ p{
     transition: .5s !important;
 }
 
+span{
+    display: inline-block;
+    position: relative;
+    color: var(--white);
+}
+
+span:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--pink);
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+
+span:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom-left;
+}
+
 .nav-link:hover{
     transform: scale(1.2);
-    color: var(--pink) !important;
-    text-decoration: underline;
+    color: var(--light-pink) !important;
 }
 
 .img-navbar:hover {
@@ -103,6 +112,7 @@ p{
 
 .home-page {
     background: linear-gradient(300deg, rgba(102, 85, 239, 1) 10%, rgba(187, 81, 238, 1) 50%, rgba(237, 178, 118, 1) 100%);
+    height: 90vh;
 }
 
 .home-img {
@@ -126,7 +136,14 @@ p{
 /* página do robô */
 
 .robot-page {
-    background: var(--dark);
+    background: url(../images/bg1.png);
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100%;
 }
 
 
@@ -134,14 +151,21 @@ p{
     padding: 3rem;
 }
 
-.robot-img img{
-    width: 80%;
-    filter: drop-shadow(0px 0px 80px #BB51EE);
+.robot-img{
+    max-width: 100%;
 }
+
 
 /* hardware */
 .arma-page {
-    background-color: var(--dark);
+    background: url(../images/bg21.png);
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100%;
 }
 
 .hardware-img img{
@@ -151,20 +175,23 @@ p{
 
 /* accordion */
 .accordion {
-    --bs-accordion-bg: var(--dark) !important;
+    --bs-accordion-bg: transparent!important;
     --bs-accordion-border-color: none !important;
     --bs-accordion-btn-focus-border-color: none !important;
     --bs-accordion-btn-focus-box-shadow: var(--dark) !important;
-    --bs-accordion-active-bg: var(--dark) !important;
+    --bs-accordion-active-bg: transparent!important;
     --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='var%28--bs-body-color%29'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
-.title-accordion:hover{
-    color: var(--light-pink);
-    transform: scale(1.2);
-    text-decoration: underline;
-    transition: .4s ease-in-out;
+.title-accordion{
+    transition: .2s;
+    color: var(--white) !important;
 }
+
+.title-accordion:hover{
+    transform: scale(1.2);
+}
+
 
 .text-accordion{
     font-size: 15px !important;
@@ -177,7 +204,14 @@ p{
 
 /* galeria de imagens */
 .gallery-page {
-    background: var(--dark);
+    background: url(../images/bg1.png);
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100%;
 }
 
 .carousel-item {
@@ -186,20 +220,58 @@ p{
 }
 
 .slide{
-    width: 70%;
-    margin: 0 15%;
+    width: 60%;
+    margin: 5% 20%;
+    box-shadow: 0 30px 30px 0 var(--dark);
+}
+
+
+/* videos */
+.videos-page{
+    background: url(../images/bg21.png);
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100%;
+}
+
+.videos{
+    padding: 4rem;
+}
+
+/* next e robocup */
+.next-page{
+    background: url(../images/bg1.png);
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100%;
 }
 
 
 /* página de equipe */
 .team-page {
-    background: var(--dark);
+    background: url(../images/bg21.png);
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100%;
 }
 
 
 /* página de contato */
 .contact-page {
     background: linear-gradient(107.2deg, #EDB276 2.11%, #B858DD 49.53%, #5A78EB 100%, #5A78EB 100%);
+    height: 100vh;
 }
 
 .contact-img {
