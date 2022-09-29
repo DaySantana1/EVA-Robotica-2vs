@@ -218,4 +218,7 @@ textarea {
     .bg-header{
         padding: 0;
     }
+    .contact-img{
+        margin-top: 3rem !important;
+    }
 }
