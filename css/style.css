@@ -232,7 +232,7 @@ span:hover:after {
 /* videos */
 .videos-page {
     background: url(../images/bg21.png);
-    height: 90vh;
+    /* height: 90vh;     */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -248,13 +248,14 @@ span:hover:after {
 /* next e robocup */
 .next-page {
     background: url(../images/bg1.png);
-    height: 70vh;
+    min-height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    /* min-height: 100%; */
+
+
 }
 
 
@@ -280,21 +281,29 @@ span:hover:after {
 
 /* página de equipe */
 .team-page {
-    background: url(../images/bg1.png);
-    height: 90vh;
+    background: url(../images/bg21.png);
+    min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    width: 100%;
-    min-height: 100%;
+    /* width: 100%;
+    min-height: 100%; */
+    max-height: 100%;
 }
 
+.img-teamb img {
+    width: 50%;
+}
+
+.img-teamt img{
+    width: 60%;
+}
 
 /* página de contato */
 .contact-page {
     background: linear-gradient(107.2deg, #EDB276 2.11%, #B858DD 49.53%, #5A78EB 100%, #5A78EB 100%);
-    height: 100vh;
+    min-height: 80vh;
 }
 
 .contact-img {
@@ -328,6 +337,13 @@ span:hover:after {
     --bs-btn-border-color: none !important;
 }
 
+/* footer */
+
+.footer-bg {
+    background-color: var(--dark);
+    min-height: 20vh;
+}
+
 @media (max-width:991px) {
     .bg-grey {
         background: rgba(255, 255, 255, 0.9);
@@ -359,7 +375,7 @@ span:hover:after {
     .contact-img {
         margin: 2rem 0 0 0 !important;
     }
-    
+
     .slide {
         width: 100%;
         margin: 0;
@@ -368,13 +384,19 @@ span:hover:after {
     .videos {
         padding: 0;
     }
+
     .arma-page {
         height: 80vh;
     }
+
     .gallery-page {
         height: 40vh;
     }
+
     .videos-page {
         height: 80vh;
+    }
+    .img-teamb img {
+        width: 60%;
     }
 }
