@@ -173,6 +173,20 @@ span:hover:after {
     color: var(--light-pink);
 }
 
+.btn button{
+    color: white;
+    background: linear-gradient(300deg, #6655ef 10%, rgba(187, 81, 238, 1) 50%, rgba(237, 178, 118, 1) 100%);
+    padding: 0.5rem 1rem 0px 1rem;
+    margin: 1rem;
+    border: none !important;
+    border-radius: 7px;
+}
+
+.btn button a{
+    text-decoration: none;
+    color: white;
+}
+
 /* startup */
 
 .company-page {
