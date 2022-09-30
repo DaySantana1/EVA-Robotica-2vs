@@ -197,7 +197,7 @@ span:hover:after {
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    min-height: 100%;
+    /* min-height: 100%; */
 }
 
 .about-pandemic{
@@ -248,6 +248,10 @@ span:hover:after {
 .hardware-img img {
     width: 70%;
     filter: drop-shadow(0px 0px 80px #BB51EE);
+}
+
+.grafico-img img{
+    width: 100%;
 }
 
 /* accordion */
@@ -432,6 +436,14 @@ span:hover:after {
     .slides{
         width: 80%;
     }
+    
+}
+
+
+@media (max-width: 375px){
+    .text-startup{
+        font-size: 80% !important;
+    }
 }
 
 @media (max-width: 767px){
@@ -505,5 +517,16 @@ span:hover:after {
     }
     .img-teamb img {
         width: 60%;
+    }
+
+    .text-startup{
+        font-size: 100%;
+    }
+
+    .img-startup img{
+        width: 200%;
+    }
+    .grafico-img img {
+        width: 100%;
     }
 }
