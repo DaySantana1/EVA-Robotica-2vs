@@ -217,8 +217,8 @@ span:hover:after {
 }
 
 .slides {
-    width: 80%;
-    margin: 0 10%;
+    width: 60%;
+    margin: 0 auto;
     box-shadow: 0 0px 0px 0 var(--dark);
 }
 
@@ -269,7 +269,9 @@ span:hover:after {
 .card {
     background-color: var(--dark) !important;
     border: none !important;
+
 }
+
 
 .carousel{
     width: 80% !important;
@@ -391,8 +393,8 @@ span:hover:after {
     }
 
     .slide {
-        width: 100%;
-        margin: 0;
+        width: 100% !important;
+        margin: 0 !important;
     }
 
     .videos {
@@ -400,13 +402,16 @@ span:hover:after {
     }
 
     .arma-page {
-        height: 80vh;
+        height: 40vh !important;
     }
 
     .gallery-page {
-        height: 40vh;
+        height: 40vh !important;
     }
 
+    .component-page{
+        min-height: 40vh;
+    }
     .videos-page {
         height: 80vh;
     }
