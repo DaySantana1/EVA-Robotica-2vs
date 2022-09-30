@@ -11,9 +11,26 @@ textarea {
     resize: none !important;
 }
 
-h2 {
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    color: var(--lilac);
+}
+
+h2{
+    color: var(--lilac);
+}
+
+h3 {
     font-size: 25px !important;
     color: var(--white);
+}
+
+h4{
+    color: var(--light-pink);
+    font-weight: 100;
 }
 
 p {
@@ -23,7 +40,7 @@ p {
 /* keyframes */
 @keyframes home {
     from {
-        margin-top: -50%;
+        margin-top: -20%;
     }
 
     to {
@@ -33,11 +50,11 @@ p {
 
 @keyframes homeimg {
     from {
-        transform: translateX(100px);
+        transform: rotate(60deg);
     }
 
     to {
-        transform: translateX(0px);
+        transform: rotate(0);
     }
 }
 
@@ -112,17 +129,17 @@ span:hover:after {
 /* home */
 
 .home-page {
-    background: linear-gradient(300deg, rgba(102, 85, 239, 1) 10%, rgba(187, 81, 238, 1) 50%, rgba(237, 178, 118, 1) 100%);
+    background: linear-gradient(300deg, #6655ef 10%, rgba(187, 81, 238, 1) 50%, rgba(237, 178, 118, 1) 100%);
     height: 90vh;
 }
 
 .home-img {
-    max-width: 50%;
-    transform: scaleX(-1);
+    animation: homeimg cubic-bezier(.68, .16, .43, .91) 1s;
+    max-width: 70%;
 }
 
 .home-img img {
-    max-width: 80%;
+    max-width: 60%;
     filter: drop-shadow(0px 0px 100px var(--lilac));
 }
 
@@ -152,6 +169,55 @@ span:hover:after {
     max-width: 100%;
 }
 
+.strongtxt{
+    color: var(--light-pink);
+}
+
+/* startup */
+
+.company-page {
+    background: url(../images/bg1.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100%;
+}
+
+.about-pandemic{
+    background: url(../images/bg21.png);
+    height: 100vh !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100%;
+}
+
+.invest-tech{
+    background: url(../images/bg1.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100%;
+}
+
+.capital-page{
+    background: url(../images/bg21.png);
+    height: 100vh !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100%;
+}
 
 /* hardware */
 .arma-page {
@@ -217,8 +283,8 @@ span:hover:after {
 }
 
 .slides {
-    width: 80%;
-    margin: 0 10%;
+    width: 70%;
+    margin: 0 auto;
     box-shadow: 0 0px 0px 0 var(--dark);
 }
 
@@ -248,8 +314,12 @@ span:hover:after {
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
+}
 
-
+.img-robocup{
+    width: 90%;
+    border-radius: 2rem;
+    filter: drop-shadow(0px 0px 20px var(--lilac));
 }
 
 
@@ -269,7 +339,9 @@ span:hover:after {
 .card {
     background-color: var(--dark) !important;
     border: none !important;
+
 }
+
 
 .carousel{
     width: 80% !important;
@@ -339,7 +411,13 @@ span:hover:after {
 
 .footer-bg {
     background-color: var(--dark);
-    min-height: 20vh;
+    min-height: 30vh;
+}
+
+@media (max-width: 500px){
+    .slides{
+        width: 80%;
+    }
 }
 
 @media (max-width: 767px){
@@ -348,9 +426,7 @@ span:hover:after {
         filter: drop-shadow(0px 0px 100px var(--lilac));
     }
 
-    h1{
-        margin-top: 5rem !important;
-    }
+   
 
     .gallery-page{
         height: 80vh;
@@ -391,8 +467,8 @@ span:hover:after {
     }
 
     .slide {
-        width: 100%;
-        margin: 0;
+        width: 100% !important;
+        margin: 0 !important;
     }
 
     .videos {
@@ -400,13 +476,16 @@ span:hover:after {
     }
 
     .arma-page {
-        height: 80vh;
+        height: 70vh !important;
     }
 
     .gallery-page {
-        height: 40vh;
+        height: 40vh !important;
     }
 
+    .component-page{
+        min-height: 70vh;
+    }
     .videos-page {
         height: 80vh;
     }
