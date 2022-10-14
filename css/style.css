@@ -175,6 +175,20 @@ span:hover:after {
     color: var(--light-pink);
 }
 
+.btn button{
+    color: white;
+    background: linear-gradient(300deg, #6655ef 10%, rgba(187, 81, 238, 1) 50%, rgba(237, 178, 118, 1) 100%);
+    padding: 0.5rem 1rem 0px 1rem;
+    margin: 1rem;
+    border: none !important;
+    border-radius: 7px;
+}
+
+.btn button a{
+    text-decoration: none;
+    color: white;
+}
+
 /* startup */
 
 .company-page {
@@ -185,7 +199,7 @@ span:hover:after {
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    min-height: 100%;
+    /* min-height: 100%; */
 }
 
 .about-pandemic{
@@ -236,6 +250,10 @@ span:hover:after {
 .hardware-img img {
     width: 70%;
     filter: drop-shadow(0px 0px 80px #BB51EE);
+}
+
+.grafico-img img{
+    width: 100%;
 }
 
 /* accordion */
@@ -420,6 +438,14 @@ span:hover:after {
     .slides{
         width: 80%;
     }
+    
+}
+
+
+@media (max-width: 375px){
+    .text-startup{
+        font-size: 80% !important;
+    }
 }
 
 @media (max-width: 767px){
@@ -493,5 +519,16 @@ span:hover:after {
     }
     .img-teamb img {
         width: 60%;
+    }
+
+    .text-startup{
+        font-size: 100%;
+    }
+
+    .img-startup img{
+        width: 200%;
+    }
+    .grafico-img img {
+        width: 100%;
     }
 }
