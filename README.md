@@ -1,6 +1,7 @@
 Criação versão WEB do projeto acadêmico EVA.
 Sua estrutura será feita usando HTML, CSS e bootstrap.
 O layout e UI projetado por mim do projeto https://www.figma.com/file/rgKTyU84RnSMzlRofFnwRm/layout-eva-rob%C3%B3tica?node-id=0%3A1
+publicado no endereço https://evarobotica.netlify.app
 
 Commit "menu e hero" criação de um menu toggle drop-down e header - (ambos responsivos)
 
